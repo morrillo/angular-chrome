@@ -1,0 +1,31 @@
+<html>
+  <head>
+
+    <title>SitePoint Bookmark Extension</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- We load the libraries we need directly from the "node_modules" folder.
+    In a more complex project, we would use a different approach here, 
+    e.g. working with a build tool like gulp.js or Angular-CLI. -->
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+
+    <!-- Load the SystemJS config -->
+    <script src="scripts/system.config.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="navbar-header">
+          <strong class="navbar-brand">Odoo Offline POS</strong>
+        </div>
+    </nav>
+    <div class="container">
+        <sp-list>Loading ticket...</sp-list>
+    </div>
+
+  </body>
+
+</html>

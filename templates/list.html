@@ -1,0 +1,19 @@
+<section class="ticketlist-container ticketlist-container--blue-dark">
+  <ul class="list-group ticketlist__sublist">
+    <!-- Angular's built-in structural directive "*ngFor" 
+    instantiates a list element for each ticket. 
+    The hash prefix means, that the private variables 
+    "ticket" and "i" are created. 
+    They can be used on the list element's child elements.-->
+    <li *ngFor="#ticket of tickets; #i = index" class="list-group-item">
+      <!-- The template property binding "[ticket]" 
+      sets the value to the component property "ticket". 
+      In addition there are two custom component event bindings 
+      "(ticketChanged)" and "(ticketDeleted)". 
+      Whenever one of these events were raised, 
+      their respective functions will be executed. -->
+      <sp-ticket [ticket]="ticket" (ticketChanged)="setBookmarks()" 
+        (ticketDeleted)="deleteBookmark(ticket, i)"></sp-ticket>
+    </li>
+  </ul>
+</section>
