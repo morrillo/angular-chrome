@@ -44,6 +44,6 @@ export class TicketComponent {
   // When the "Delete" button is clicked, the event "bookmarkDeleted" 
   // will be fired.
   onDelete( ticket : Ticket ) {
-    this.TicketDeleted.emit( ticket );
+    this.ticketDeleted.emit( ticket );
   }
 }
