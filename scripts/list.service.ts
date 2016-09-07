@@ -28,7 +28,7 @@ export class ListService {
   }
 
   // A "setBookmarks()" function saves new data in the local storage.
-  setTickets( bookmarks : Object ) {
+  setTickets( tickets : Object ) {
     localStorage.setItem( 'sp-ticketlist', JSON.stringify( tickets ) );
   }
 
